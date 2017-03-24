@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>%UNITY_WEB_NAME%</title>
+		<link rel="stylesheet" href="TemplateData/Style.css">
+		<link rel="shortcut icon" href="TemplateData/Favicon.ico" />
+		<script type="text/javascript" src="https://code.createjs.com/tweenjs-0.6.1.min.js"></script>
+		<script type="text/javascript" src="TemplateData/CSSPlugin.js"></script>
+		<script src="TemplateData/UnityProgress.js"></script>
+	</head>
+	<body class="template">
+		<div class="template-wrap clear">
+			<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="%UNITY_HEIGHT%px" width="%UNITY_WIDTH%px"></canvas>
+		</div>
+		<div id="loadingBox">
+			<img src="TemplateData/Logo.png" style="width: 64px; height: 64px; margin-bottom: 10px;" />
+			<div id="bgBar"></div>
+			<div id="progressBar"></div>
+			<p id="loadingInfo">Loading...</p>
+		</div>
+		%UNITY_WEBGL_LOADER_GLUE%
+	</body>
+</html>
